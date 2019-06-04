@@ -18,3 +18,6 @@ sudo chmod a+x /usr/local/bin/docker-compose
 # Enable & start docker
 sudo systemctl enable docker
 sudo systemctl start docker
+
+# using without sudo
+sudo usermod -a -G docker $USER
