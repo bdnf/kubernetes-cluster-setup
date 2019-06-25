@@ -1,3 +1,3 @@
 #!/bin/bash
-kubectl drain $NODE --delete-local-data --force --ignore-daemonsets
+kubectl drain $(echo=$NODE) --delete-local-data --force --ignore-daemonsets
 kubectl delete node $NOE
