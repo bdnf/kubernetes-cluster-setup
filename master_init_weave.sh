@@ -10,3 +10,9 @@ kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl versio
 kubectl get pods --all-namespaces
 
 kubectl taint nodes --all node-role.kubernetes.io/master-
+
+sudo ufw allow 6763/tcp
+sudo ufw allow 6763/udp
+sudo ufw allow 6764/udp
+sudo ufw allow 6781/tcp
+sudo ufw allow 6782/tcp
