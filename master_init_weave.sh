@@ -16,3 +16,9 @@ sudo ufw allow 6763/udp
 sudo ufw allow 6764/udp
 sudo ufw allow 6781/tcp
 sudo ufw allow 6782/tcp
+
+#Kubeadm master 
+sudo ufw allow 6443,2379,2380,10250,10251,10252,10255/tcp
+
+#Nodes
+# sudo ufw allow 10250,10255,30000:32767/tcp
